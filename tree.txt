@@ -1,0 +1,173 @@
+フォルダー パスの一覧:  ボリューム Windows
+ボリューム シリアル番号は A0F0-2F40 です
+C:.
+├─lua
+│  └─jit
+├─origdoc
+├─patch
+├─plugins
+│  ├─autofmt
+│  │  ├─autoload
+│  │  │  └─autofmt
+│  │  ├─doc
+│  │  ├─test
+│  │  └─tools
+│  ├─bufexplorer-7.4.2
+│  │  ├─doc
+│  │  └─plugin
+│  ├─golang
+│  │  ├─autoload
+│  │  │  └─go
+│  │  ├─ftplugin
+│  │  │  └─go
+│  │  └─plugin
+│  ├─kaoriya
+│  │  ├─autoload
+│  │  │  └─kaoriya
+│  │  ├─keymap
+│  │  ├─plugin
+│  │  └─syntax
+│  ├─matchit
+│  │  ├─doc
+│  │  └─plugin
+│  ├─vim-smartchr-0.1.1
+│  │  ├─autoload
+│  │  ├─doc
+│  │  └─plugin
+│  ├─vimdoc-ja
+│  │  ├─doc
+│  │  └─syntax
+│  ├─vimproc
+│  │  ├─autoload
+│  │  │  └─vimproc
+│  │  ├─doc
+│  │  └─plugin
+│  └─yankring_180
+│      ├─doc
+│      └─plugin
+├─switches
+│  ├─catalog
+│  └─enabled
+└─vim74
+    ├─autoload
+    │  └─xml
+    ├─colors
+    ├─compiler
+    ├─doc
+    ├─ftplugin
+    ├─icons
+    ├─indent
+    ├─keymap
+    ├─lang
+    │  ├─af
+    │  │  └─LC_MESSAGES
+    │  ├─ca
+    │  │  └─LC_MESSAGES
+    │  ├─cs
+    │  │  └─LC_MESSAGES
+    │  ├─de
+    │  │  └─LC_MESSAGES
+    │  ├─en_GB
+    │  │  └─LC_MESSAGES
+    │  ├─eo
+    │  │  └─LC_MESSAGES
+    │  ├─es
+    │  │  └─LC_MESSAGES
+    │  ├─fi
+    │  │  └─LC_MESSAGES
+    │  ├─fr
+    │  │  └─LC_MESSAGES
+    │  ├─ga
+    │  │  └─LC_MESSAGES
+    │  ├─it
+    │  │  └─LC_MESSAGES
+    │  ├─ja
+    │  │  └─LC_MESSAGES
+    │  ├─ko
+    │  │  └─LC_MESSAGES
+    │  ├─no
+    │  │  └─LC_MESSAGES
+    │  ├─pl
+    │  │  └─LC_MESSAGES
+    │  ├─pt_BR
+    │  │  └─LC_MESSAGES
+    │  ├─ru
+    │  │  └─LC_MESSAGES
+    │  ├─sk
+    │  │  └─LC_MESSAGES
+    │  ├─sv
+    │  │  └─LC_MESSAGES
+    │  ├─uk
+    │  │  └─LC_MESSAGES
+    │  ├─vi
+    │  │  └─LC_MESSAGES
+    │  ├─zh_CN
+    │  │  └─LC_MESSAGES
+    │  ├─zh_CN.UTF-8
+    │  │  └─LC_MESSAGES
+    │  ├─zh_TW
+    │  │  └─LC_MESSAGES
+    │  └─zh_TW.UTF-8
+    │      └─LC_MESSAGES
+    ├─macros
+    │  ├─hanoi
+    │  ├─life
+    │  ├─maze
+    │  └─urm
+    ├─plugin
+    ├─print
+    ├─spell
+    │  ├─af
+    │  ├─am
+    │  ├─bg
+    │  ├─br
+    │  ├─ca
+    │  ├─check
+    │  ├─cs
+    │  ├─cy
+    │  ├─da
+    │  ├─de
+    │  ├─el
+    │  ├─en
+    │  ├─eo
+    │  ├─es
+    │  ├─fo
+    │  ├─fr
+    │  ├─ga
+    │  ├─gd
+    │  ├─gl
+    │  ├─he
+    │  ├─hr
+    │  ├─hu
+    │  ├─id
+    │  ├─it
+    │  ├─ku
+    │  ├─la
+    │  ├─lt
+    │  ├─lv
+    │  ├─mg
+    │  ├─mi
+    │  ├─ms
+    │  ├─nb
+    │  ├─nl
+    │  ├─nn
+    │  ├─ny
+    │  ├─pl
+    │  ├─pt
+    │  ├─ro
+    │  ├─ru
+    │  ├─rw
+    │  ├─sk
+    │  ├─sl
+    │  ├─sv
+    │  ├─sw
+    │  ├─tet
+    │  ├─th
+    │  ├─tl
+    │  ├─tn
+    │  ├─uk
+    │  ├─yi
+    │  └─zu
+    ├─syntax
+    ├─tools
+    └─tutor
