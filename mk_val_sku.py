@@ -71,7 +71,7 @@ def main():
     for img in img_list:
         img_dict = {}
         img_dict['license'] = 4;    # TODO
-        img_dict['filename'] = img['name']
+        img_dict['file_name'] = img['name']
         img_dict['height'] = img['h']
         img_dict['width'] = img['w']
         img_dict['id'] = img['img_id']
