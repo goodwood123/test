@@ -88,6 +88,8 @@ def main():
         ann_dict['category_id'] = 18    # TODO
         bbox = [ann['x'], ann['y'], ann['w'], ann['h']]
         ann_dict['bbox'] = bbox
+        # TODO
+        ann_dict['area'] = ann['w'] * ann['h']
         ann_dict['id'] = max_img_id + index + 1
         annotations.append(ann_dict)
     coco_annotations['annotations'] = annotations
