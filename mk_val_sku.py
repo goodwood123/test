@@ -66,6 +66,15 @@ def main():
                 assert hit == True
 
     #import ipdb;ipdb.set_trace()
+    bk_categories = coco_annotations['categories']
+    categories = []
+    object_cate = {}
+    object_cate['supercategory'] = 'indoor'
+    object_cate['id'] = 1
+    object_cate['name'] = 'object'
+    categories.append(object_cate)
+    coco_annotations['categories'] = categories
+
     bk_images = coco_annotations['images']
     images = []
     for img in img_list:
@@ -80,12 +89,11 @@ def main():
 
     bk_annotations = coco_annotations['annotations']
     annotations = []
-
     for index, ann in enumerate(ann_list):
         ann_dict = {}
         ann_dict['iscrowd'] = 0
         ann_dict['image_id'] = ann['img_id']
-        ann_dict['category_id'] = 18    # TODO
+        ann_dict['category_id'] = 1
         bbox = [ann['x'], ann['y'], ann['w'], ann['h']]
         ann_dict['bbox'] = bbox
         # TODO
