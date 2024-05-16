@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product Id="8415795D-AC0E-4A6C-B000-B18347E1FF32" Name="SetupProject1" Language="1033" Version="1.0.0.0" Manufacturer="AAA" UpgradeCode="196e5053-5c89-414a-9bde-93a066fdc5fd">
+		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+		<MediaTemplate EmbedCab="yes"/>
+    <UIRef Id="WixUI_Minimal" />
+    <WixVariable Id="WixUILicenseRtf" Value="license.rtf"/>
+    <WixVariable Id="WixUIDialogBmp" Value="dialog.bmp" />
+    <WixVariable Id="WixUIBannerBmp" Value="banner.bmp" />
+		<Feature Id="ProductFeature" Title="SetupProject1" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="SetupProject1" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+  <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="Component1" Guid="{12A1D0C2-1441-412B-8AB2-AD707D51167B}" DiskId="1">
+        <File Id="File01" Name="test.txt" Source="test.txt"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+
+    <Fragment>
+    <DirectoryRef Id="INSTALLFOLDER">
+      <Component Id="Component2" Guid="{A0B9AD95-6275-43E0-A3C2-B534DC4A0091}" DiskId="1">
+        <File Id="File02" Name="test2.txt" Source="test2.txt"/>
+      </Component>
+    </DirectoryRef>
+  </Fragment>
+  
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
+			<!-- <Component Id="ProductComponent"> -->
+				<!-- TODO: Insert files, registry keys, and other resources here. -->
+			<!-- </Component> -->
+      <ComponentRef Id="Component1" />
+      <ComponentRef Id="Component2" />
+    </ComponentGroup>
+	</Fragment>
+</Wix>
