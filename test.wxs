@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="799D20C9-7F8E-40B2-9774-A2D920678164" Name="TestProduct" Language="1041" Version="0.0.0.1" Manufacturer="kato" UpgradeCode="30E38247-34E4-454C-85B3-BAC84297D9A1" Codepage="932">
+    <Package Description="Test file in a Product" Comments="Simple test" InstallerVersion="200" Compressed="yes" SummaryCodepage="932" />
+    <Media Id="1" Cabinet="simple.cab" EmbedCab="yes" />
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder" Name="PFiles"><Directory Id="WIXFILES" Name="WixFIles"><Component Id="TEST.TXT" DiskId="1" Guid="28D20282-078A-456E-98CC-2C23D6E6A12B"><File Id="TEST.TXT" Name="test.txt" Source="C:\Users\goodw\WiX_root\WixFIles\test.txt" /></Component><Component Id="TEST2.TXT" DiskId="1" Guid="9E3B8DEE-DDD5-4079-B31F-249856271831"><File Id="TEST2.TXT" Name="test2.txt" Source="C:\Users\goodw\WiX_root\WixFIles\test2.txt" /></Component></Directory></Directory>
+    <Directory Name="aaa" Id="AAA" /></Directory>
+    <Feature Id="DefaultFeature" Title="Main Feature" Level="1">
+    <ComponentRef Id="TEST.TXT" /><ComponentRef Id="TEST2.TXT" /></Feature>
+    <UI />
+  <UIRef Id="WixUI_Minimal" /><WixVariable Id="WixUILicenseRtf" Value="license.rtf" /><Binary Id="license.rtf" SourceFile="C:\Users\goodw\WiX_root\license.rtf" />
+  </Product>
+</Wix>
